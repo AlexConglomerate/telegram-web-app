@@ -10,7 +10,8 @@ function MyTestComponent() {
         <>
             <div>
                 {/*{text2}*/}
-                {text3}
+                Вывожу через JSON.stringify(text3)
+                {JSON.stringify(text3)}
             </div>
         </>
     );
