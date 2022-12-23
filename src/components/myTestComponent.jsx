@@ -8,6 +8,7 @@ function MyTestComponent() {
     // const text3 = tg.initDataUnsafe?.user
     return (
         <>
+            Привет!
             {/*<div>*/}
             {/*    /!*{text2}*!/*/}
             {/*    Вывожу через JSON.stringify(text3)*/}

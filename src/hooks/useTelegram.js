@@ -6,8 +6,9 @@ export function useTelegram() {
         tg.close()
     }
 
+    // показать/скрыть главную кнопку телеграмм
     const onToggleButton = () => {
-        if(tg.MainButton.isVisible) {
+        if (tg.MainButton.isVisible) {
             tg.MainButton.hide();
         } else {
             tg.MainButton.show();

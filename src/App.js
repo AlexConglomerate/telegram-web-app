@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import {Route, Routes} from 'react-router-dom'
 import ProductList from "./components/ProductList/ProductList";
 import Form from "./components/Form/Form";
+import MyTestComponent from "./components/myTestComponent";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
     return (
         <div className="App">
+            <MyTestComponent/>
             <Header/>
             <Routes>
                 <Route index element={<ProductList/>}/>
