@@ -19,7 +19,6 @@ function App() {
     return (
         <div className="App">
             <MyTestComponent/>
-            <hr/>
             <Header/>
             <Routes>
                 <Route index element={<ProductList/>}/>
