@@ -9,7 +9,8 @@ const Header = () => {
     return (
         <div className={'header'}>
             <Button onClick={onClose}>Закрыть</Button>
-            <>{JSON.stringify(user)}</>
+            <div>12345</div>
+            <div>{JSON.stringify(user)}</div>
             <span className={'username'}>
                 {user?.username}
             </span>
