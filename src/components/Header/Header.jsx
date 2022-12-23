@@ -5,15 +5,11 @@ import './Header.css';
 
 const Header = () => {
     const {user, onClose} = useTelegram();
-
+    const text = `Hello, ${user?.first_name} ${user?.last_name},\n ${user?.username}!`
     return (
         <div className={'header'}>
+            <i>{text}</i>
             <Button onClick={onClose}>Закрыть</Button>
-            <div>12345</div>
-            <div>{JSON.stringify(user)}</div>
-            <span className={'username'}>
-                {user?.username}
-            </span>
         </div>
     );
 };
