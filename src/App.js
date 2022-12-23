@@ -9,7 +9,8 @@ import MyTestComponent from "./components/myTestComponent";
 
 
 function App() {
-    const {onToggleButton, tg} = useTelegram();
+    // const {onToggleButton, tg} = useTelegram();
+    const {tg} = useTelegram();
 
     useEffect(() => {
         tg.ready();
@@ -17,6 +18,7 @@ function App() {
 
     return (
         <div className="App">
+            12345
             <MyTestComponent/>
             <hr/>
             <Header/>
