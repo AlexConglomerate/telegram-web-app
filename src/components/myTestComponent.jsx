@@ -9,11 +9,8 @@ function MyTestComponent() {
     return (
         <>
             Привет! Вывожу через JSON.stringify(tg)
-            {/*<div>*/}
-            {/*    /!*{text2}*!/*/}
-            {/*    Вывожу через JSON.stringify(text3)*/}
-            {JSON.stringify(tg)}
-            {/*</div>*/}
+            <hr/>
+            {JSON.stringify(tg, null, 7)}
         </>
     );
 }
