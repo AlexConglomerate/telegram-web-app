@@ -5,7 +5,7 @@ export const changeThemeWhite = {
         "user": {
             "id": 1671763687,
             "first_name": "Alex",
-            "last_name": "",
+            "last_name": "Rud",
             "username": "Alex_9267",
             "language_code": "ru"
         },
