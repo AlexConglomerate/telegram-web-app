@@ -1,11 +1,13 @@
 import React from 'react';
 import orangeWhite from "../example.json/orangeWhite";
+import {useTelegram} from "../hooks/useTelegram";
 
 const local = window.Telegram.WebApp.user
-const tg = local ? window.Telegram.WebApp : orangeWhite
+const tg = local === undefined ? window.Telegram.WebApp : orangeWhite
 const user = tg.initDataUnsafe?.user
 
 function MyTestComponent() {
+    const {close} = useTelegram()
     return (
         <div>
             <div className="flex flex-row flex-wrap justify-end bg-slate-300">
@@ -19,6 +21,7 @@ function MyTestComponent() {
             <div>
                 <h1>Buttons</h1>
                 <hr/>
+                <button onClick={close}></button>
             </div>
         </div>
     );
