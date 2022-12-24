@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from "../Button/Button";
-import {useTelegram} from "../../hooks/useTelegram";
+import {useTelegramFunc} from "../../hooks/useTelegramFunc";
 import './Header.css';
 
 const Header = () => {
-    const {user, onClose} = useTelegram();
+    const {user, onClose} = useTelegramFunc();
     return (
         <div className={'header'}>
             <Button onClick={onClose}>Закрыть</Button>

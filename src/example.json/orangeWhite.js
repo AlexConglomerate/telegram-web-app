@@ -6,7 +6,7 @@ export const changeThemeWhite = {
             "id": 1671763687,
             "first_name": "Alex",
             "last_name": "Rud",
-            "username": "Alex_9267",
+            "username": "Alex_12345",
             "language_code": "ru"
         },
         "auth_date": "1671860863",
@@ -16,12 +16,12 @@ export const changeThemeWhite = {
     "platform": "tdesktop",
     "colorScheme": "light",
     "themeParams": {
-        "bg_color": "#ffffff",
-        "button_color": "#f6562e",
-        "button_text_color": "#ffffff",
-        "hint_color": "#999999",
+        "bg_color": "#f3b3b3",
+        "button_color": "#ffda41",
+        "button_text_color": "#0c2780",
+        "hint_color": "#1ee60c",
         "link_color": "#de3510",
-        "secondary_bg_color": "#f1f1f1",
+        "secondary_bg_color": "#f36a6a",
         "text_color": "#000000"
     },
     "isExpanded": true,

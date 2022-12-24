@@ -1,20 +1,21 @@
 import './App.css';
-import {useEffect} from "react";
-import {useTelegram} from "./hooks/useTelegram";
 import MyTestComponent from "./components/myTestComponent";
+import ColorsUsing from "./components/colorsUsing";
+import {useTelegram} from "./hooks/useTelegram";
 
 
 function App() {
-    // const {onToggleButton, tg} = useTelegram();
+    // const {onToggleButton, tg} = useTelegramFunc();
     const {tg} = useTelegram();
 
-    useEffect(() => {
-        tg.ready();
-    }, [])
+    // useEffect(() => {
+    //     tg.ready();
+    // }, [])
 
     return (
-        <div className="App">
+        <div className="flex flex-col m-4">
             <MyTestComponent/>
+            <ColorsUsing/>
             {/*<Header/>*/}
             {/*<Routes>*/}
             {/*    <Route index element={<ProductList/>}/>*/}
