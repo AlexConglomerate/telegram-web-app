@@ -7,17 +7,13 @@ function MyTestComponent() {
     // const text2 = tg
     // const text3 = tg.initDataUnsafe?.user
     return (
-        <>
+        <div>
             Привет! Вывожу через JSON.stringify(tg)
             <hr/>
-            {JSON.stringify(tg, null, 7)}
-            <hr/>
-            {JSON.stringify(tg, null, 7)}
-            <hr/>
-            {JSON.stringify(tg, null, 7)}
-            <hr/>
-            {JSON.stringify(tg, null, 7)}
-        </>
+            <code>{JSON.stringify(tg)}</code>
+            <div></div>
+            <h1 className="text-3xl hover:font-bold text-red-800"> Hello world! </h1>
+        </div>
     );
 }
 
