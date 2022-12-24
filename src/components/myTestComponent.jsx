@@ -11,6 +11,12 @@ function MyTestComponent() {
             Привет! Вывожу через JSON.stringify(tg)
             <hr/>
             {JSON.stringify(tg, null, 7)}
+            <hr/>
+            {JSON.stringify(tg, null, 7)}
+            <hr/>
+            {JSON.stringify(tg, null, 7)}
+            <hr/>
+            {JSON.stringify(tg, null, 7)}
         </>
     );
 }
