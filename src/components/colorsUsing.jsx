@@ -27,9 +27,9 @@ function ColorsUsing(props) {
             </div>
             color => {JSON.stringify(color)}
             <hr/>
-            tg => {JSON.stringify(color)}
-            <hr/>
-            window.Telegram => {JSON.stringify(window.Telegram)}
+            {/*tg => {JSON.stringify(color)}*/}
+            {/*<hr/>*/}
+            {/*window.Telegram => {JSON.stringify(window.Telegram)}*/}
         </>
     )
 }
