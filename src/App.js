@@ -6,11 +6,12 @@ import {useTelegram} from "./hooks/useTelegram";
 
 function App() {
     // const {onToggleButton, tg} = useTelegramFunc();
-    const {tg} = useTelegram();
+    const {tg, onExpand} = useTelegram();
 
-    // useEffect(() => {
-    //     tg.ready();
-    // }, [])
+    useEffect(() => {
+        tg.ready();
+        onExpand()
+    }, [])
 
     return (
         <div className="flex flex-col m-4">

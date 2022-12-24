@@ -6,6 +6,11 @@ export function useTelegram() {
         tg.close()
     }
 
+    // открывает страницу во весь экран
+    const onExpand = () => {
+        tg.expand()
+    }
+
     // показать/скрыть главную кнопку телеграмм
     const onToggleButton = () => {
         if (tg.MainButton.isVisible) {
@@ -18,6 +23,7 @@ export function useTelegram() {
     return {
         onClose,
         onToggleButton,
+        onExpand,
         tg,
         user: tg.initDataUnsafe?.user,
         queryId: tg.initDataUnsafe?.query_id,
