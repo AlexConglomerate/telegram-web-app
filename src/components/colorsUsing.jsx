@@ -2,7 +2,7 @@ import React from 'react';
 import orangeWhite from "../example.json/orangeWhite";
 
 let tg = window.Telegram.WebApp
-tg = orangeWhite
+// tg = orangeWhite
 
 function ColorsUsing(props) {
     const themeParams = {
