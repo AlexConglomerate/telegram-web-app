@@ -7,7 +7,7 @@ tg = orangeWhite
 const user = tg.initDataUnsafe?.user
 
 function MyTestComponent() {
-    const {close, onToggleButton} = useTelegram()
+    const {onClose, onToggleButton} = useTelegram()
     const buttonClass = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-3 border border-blue-700 rounded"
     return (
         <div>
@@ -21,7 +21,7 @@ function MyTestComponent() {
             </div>
             <div className="flex flex-col">
                 <h1 className="text-3xl hover:font-bold text-red-800">Buttons </h1>
-                <button className={buttonClass} onClick={close}>Close</button>
+                <button className={buttonClass} onClick={onClose}>Close</button>
                 <button className={buttonClass} onClick={onToggleButton}>onToggleButton</button>
             </div>
         </div>
