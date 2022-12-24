@@ -1,17 +1,17 @@
 import './App.css';
 import MyTestComponent from "./components/myTestComponent";
 import ColorsUsing from "./components/colorsUsing";
-import {useTelegram} from "./hooks/useTelegram";
+// import {useTelegram} from "./hooks/useTelegram";
 
 
 function App() {
     // const {onToggleButton, tg} = useTelegramFunc();
-    const {tg, onExpand} = useTelegram();
+    // const {tg, onExpand} = useTelegram();
 
-    useEffect(() => {
-        tg.ready();
-        onExpand()
-    }, [])
+    // useEffect(() => {
+    //     tg.ready();
+    //     onExpand()
+    // }, [])
 
     return (
         <div className="flex flex-col m-4">
