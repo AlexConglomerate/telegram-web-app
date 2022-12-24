@@ -2,12 +2,13 @@ import React from 'react';
 import orangeWhite from "../example.json/orangeWhite";
 import {useTelegram} from "../hooks/useTelegram";
 
-const local = window.Telegram.WebApp.user
-const tg = local === undefined ? window.Telegram.WebApp : orangeWhite
+let tg = window.Telegram.WebApp
+// tg = orangeWhite
 const user = tg.initDataUnsafe?.user
 
 function MyTestComponent() {
-    const {close} = useTelegram()
+    const {close, onToggleButton} = useTelegram()
+    const buttonClass = "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-3 border border-blue-700 rounded"
     return (
         <div>
             <div className="flex flex-row flex-wrap justify-end bg-slate-300">
@@ -18,10 +19,10 @@ function MyTestComponent() {
                     <div>{user?.username}</div>
                 </div>
             </div>
-            <div>
-                <h1>Buttons</h1>
-                <hr/>
-                <button onClick={close}></button>
+            <div className="ml-5 flex flex-col">
+                <h1 className="text-3xl hover:font-bold text-red-800 mb-3"> Buttons </h1>
+                <button className={buttonClass} onClick={close}>Close</button>
+                <button className={buttonClass} onClick={onToggleButton}>onToggleButton</button>
             </div>
         </div>
     );
